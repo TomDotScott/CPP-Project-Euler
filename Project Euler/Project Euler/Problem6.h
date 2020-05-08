@@ -12,7 +12,10 @@ class Problem6 {
 public:
 	explicit Problem6(unsigned long _limit);
 private:
-	static unsigned long SumSquare(unsigned long _limit);
-	static unsigned long SquareSum(unsigned long _limit);
+	static unsigned long BruteForceSumSquare(unsigned long _limit);
+	static unsigned long BruteForceSquareSum(unsigned long _limit);
+
+	static unsigned long ElegantSumSquare(unsigned long _limit);
+	unsigned long ElegantSquareSum(unsigned long _limit);
 };
 
