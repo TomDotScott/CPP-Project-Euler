@@ -1,7 +1,7 @@
 #include <iostream>
-#include "Problem2.h"
+#include "Problem3.h"
 int main()
 {
-	Problem2 problem2(4000000);
+	Problem3 problem3(600851475143);
 	return 1;
 }
