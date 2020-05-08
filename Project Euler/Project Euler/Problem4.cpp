@@ -21,12 +21,34 @@ int Problem4::FindLargestPalindromeBruteForce() const {
 			//check if the number is palindromic
 			if (BruteForceIsPalindrome(product)) {
 				//check if it is the highest
-				if(product > highestPalindrome)
-				{
+				if (product > highestPalindrome) {
 					highestPalindrome = product;
 				}
 			}
 		}
 	}
 	return highestPalindrome;
+}
+
+int Problem4::ElegantReverse(int _number) {
+	int newNum{ 0 };
+	while (_number != 0) {
+		const int digit{ _number % 10 };
+		newNum = newNum * 10 + digit;
+		_number /= 10;
+	}
+	return newNum;
+}
+
+int Problem4::ElegantFindLargestPalindrome() {
+	int largest{ 0 };
+	for (int i = 999; i > 100; --i) {
+		for (int j = 999; j >= i; --j) {
+			const int product{ i * j };
+			if (product > largest && ElegantReverse(product) == product) {
+				largest = product;
+			}
+		}
+	}
+	return largest;
 }
