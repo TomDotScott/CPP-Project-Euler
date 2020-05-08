@@ -7,10 +7,12 @@ class Problem1 {
 public:
 	explicit Problem1(const int _limit) : m_limit(_limit)
 	{
-		std::cout << ThreeOrFiveBelowBruteForce() << std::endl;
+		std::cout << ThreeOrFiveBelowElegant() << std::endl;
 	};
 private:
+	static int Sum(int _limit);
 	int ThreeOrFiveBelowBruteForce() const;
+	int ThreeOrFiveBelowElegant() const;
 	int m_limit;
 };
 
