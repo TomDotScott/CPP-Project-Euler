@@ -13,7 +13,7 @@ public:
 		std::cout << EvenFibBruteForce() << std::endl;
 	};
 private:
-	int EvenFibBruteForce() const;
+	unsigned long EvenFibBruteForce() const;
 	int m_limit;
 };
 

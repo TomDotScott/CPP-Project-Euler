@@ -1,12 +1,12 @@
 #include "Problem2.h"
 
-int Problem2::EvenFibBruteForce() const
+unsigned long Problem2::EvenFibBruteForce() const
 {
-	int total{ 0 };
-	int previousTerm{ 0 };
-	int currentTerm{ 1 };
-	while (currentTerm < m_limit) {
-		const int newTerm{ currentTerm + previousTerm };
+	unsigned long int total{ 0 };
+	unsigned long int previousTerm{ 0 };
+	unsigned long int currentTerm{ 1 };
+	while (currentTerm < static_cast<unsigned long>(m_limit)) {
+		const unsigned long int newTerm{ currentTerm + previousTerm };
 		previousTerm = currentTerm;
 		currentTerm = newTerm;
 		if(currentTerm % 2 == 0)
