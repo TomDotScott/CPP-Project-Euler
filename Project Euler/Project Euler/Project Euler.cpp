@@ -1,8 +1,9 @@
 #include <iostream>
 #include <vector>
 
-#include "Problem7.h"
+#include "Problem8.h"
 int main()
 {
-	Problem7 problem7(10001);
+	std::string fileName = "ThousandDigit.txt";
+	Problem8 problem8(fileName, 13);
 }
