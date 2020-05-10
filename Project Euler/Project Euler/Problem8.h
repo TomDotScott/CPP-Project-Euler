@@ -11,7 +11,7 @@ class Problem8 {
 public:
 	explicit Problem8(std::string& _fileName, int _digitCount) { std::cout << Solve(_fileName, _digitCount) << std::endl; };
 private:
-	static unsigned long long Solve(std::string& _fileName, int _digitCount);
+	static unsigned long long Solve(std::string& _fileName, unsigned long long _digitCount);
 	static void OpenFile(std::string& _fileName, std::vector<int>& _vector);
 };
 

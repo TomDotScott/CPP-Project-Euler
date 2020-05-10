@@ -2,7 +2,7 @@
 #include <fstream>
 #include <vector>
 
-unsigned long long Problem8::Solve(std::string& _fileName, int _digitCount)
+unsigned long long Problem8::Solve(std::string& _fileName, unsigned long long _digitCount)
 {
 	//do the maths
 	std::vector<int> digits;
