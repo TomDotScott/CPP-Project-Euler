@@ -13,6 +13,7 @@ public:
 	Problem9();
 private:
 	void FindABC();
+	void ElegantFindABC();
 	static int Product(const int _a, const int _b, const int _c) { return _a * _b * _c; }
 	int m_a{ 0 };
 	int m_b{ 0 };
