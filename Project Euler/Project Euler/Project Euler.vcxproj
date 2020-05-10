@@ -152,6 +152,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Problem1.cpp" />
+    <ClCompile Include="Problem11.cpp" />
     <ClCompile Include="Problem2.cpp" />
     <ClCompile Include="Problem3.cpp" />
     <ClCompile Include="Problem4.cpp" />
@@ -165,6 +166,7 @@
   <ItemGroup>
     <ClInclude Include="Problem1.h" />
     <ClInclude Include="Problem10.h" />
+    <ClInclude Include="Problem11.h" />
     <ClInclude Include="Problem2.h" />
     <ClInclude Include="Problem3.h" />
     <ClInclude Include="Problem4.h" />

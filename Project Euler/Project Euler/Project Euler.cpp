@@ -1,8 +1,9 @@
 #include <iostream>
 #include <vector>
-
-#include "Problem10.h"
+#include <string>
+#include "Problem11.h"
 int main()
 {
-	Problem10 problem10;
+	std::string fileName = "TwentyByTwentyGrid.txt";
+	Problem11 problem11(fileName);
 }
