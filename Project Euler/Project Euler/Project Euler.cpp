@@ -1,8 +1,8 @@
 #include <iostream>
 #include <vector>
 
-#include "Problem9.h"
+#include "Problem10.h"
 int main()
 {
-	Problem9 problem9;
+	Problem10 problem10;
 }
