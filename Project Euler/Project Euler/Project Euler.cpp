@@ -1,8 +1,11 @@
-#include <iostream>
+﻿#include <iostream>
 #include <vector>
 #include <string>
-#include "Problem12.h"
+#include "Problem13.h"
+
 int main()
 {
-	Problem12 problem12(500);
+
+	std::string fileName = "NumbersList.txt";
+	Problem13 problem13(fileName);
 }
