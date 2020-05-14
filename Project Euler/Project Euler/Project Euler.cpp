@@ -1,11 +1,11 @@
 ﻿#include <iostream>
 #include <vector>
 #include <string>
-#include "Problem13.h"
+#include "Problem14.h"
 
 int main()
 {
 
 	std::string fileName = "NumbersList.txt";
-	Problem13 problem13(fileName);
+	Problem14 problem14(1000000);
 }
