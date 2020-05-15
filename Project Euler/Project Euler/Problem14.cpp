@@ -3,27 +3,27 @@
 #include <iostream>
 #include <vector>
 
-Problem14::Problem14(int _limit)
+Problem14::Problem14(unsigned long _limit)
 {
-	int longestChain{ 2 };
-	long largestNumber{ 2 };
+	unsigned long longestChain{ 2 };
+	unsigned long largestNumber{ 2 };
 	//stores the powers of 2 for easy access in the collatz chain
-	std::vector<long> powersOfTwoCache{
+	std::vector<unsigned long> powersOfTwoCache{
 		1, 2, 4, 8, 16, 32, 64, 128, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576, 2097152, 4194304
 	};
-	for(long i = 2; i < _limit ; ++i)
+	for(unsigned long i = 2; i < _limit ; ++i)
 	{
 		const int currentChain = Collatz(i, powersOfTwoCache);
 		if(currentChain > longestChain)
 		{
 			longestChain = currentChain;
 			largestNumber = i;
-			std::cout << largestNumber << " PRODUCED A CHAIN OF LENGTH : " << longestChain << std::endl;
 		}
 	}
+	std::cout << largestNumber << " PRODUCED A CHAIN OF LENGTH : " << longestChain << std::endl;
 }
 
-int Problem14::Collatz(long _num, std::vector<long>& _powersOfTwoCache)
+int Problem14::Collatz(unsigned long _num, std::vector<unsigned long>& _powersOfTwoCache) const
 {
 	int chainLength{ 0 };
 	while (_num != 1)
@@ -46,12 +46,12 @@ int Problem14::Collatz(long _num, std::vector<long>& _powersOfTwoCache)
 	return chainLength + 1;
 }
 
-int Problem14::BinarySearch(std::vector<long>& _iterable, const int _startPoint, const int _endPoint, long& _valueToFind)
+int Problem14::BinarySearch(std::vector<unsigned long>& _iterable, const int _startPoint, const int _endPoint, unsigned long& _valueToFind)
 {
 	if(_endPoint >= 1)
 	{
 		if (_endPoint >= _startPoint) {
-			int mid = _startPoint + (_endPoint - _startPoint) / 2;
+			const int mid = _startPoint + (_endPoint - _startPoint) / 2;
 
 			// If the element is present at the middle 
 			// itself 

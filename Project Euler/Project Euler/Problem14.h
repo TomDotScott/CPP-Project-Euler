@@ -13,10 +13,10 @@
 // CHALLENGE - Which starting number, under one million, produces the longest chain?
 class Problem14 {
 public:
-	explicit Problem14(int _limit);
+	explicit Problem14(unsigned long _limit);
 private:
 	//Takes in a number and returns the amount of steps it takes to get to 1
-	int Collatz(long _num, std::vector<long>& _powersOfTwoCache);
-	static int BinarySearch(std::vector<long>& _iterable, int _startPoint, int _endPoint, long& _valueToFind);
+	int Collatz(unsigned long _num, std::vector<unsigned long>& _powersOfTwoCache) const;
+	static int BinarySearch(std::vector<unsigned long>& _iterable, int _startPoint, int _endPoint, unsigned long& _valueToFind);
 };
 
